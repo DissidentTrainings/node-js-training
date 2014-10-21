@@ -8,11 +8,11 @@ Introduces to node.js, npm and packages
 
 ## Part I 
 
-## Introduction and collection of objectives
+### Introduction and collection of objectives
 
 Introduction to the training, the topic, the method and collection of participants objectives.  
 
-## How node works & why javascript 
+### How node works & why javascript 
 
 * V8
 * libev
@@ -20,7 +20,7 @@ Introduction to the training, the topic, the method and collection of participan
 * npm 
 * require.js 
 
-## Building and executing a basic node.js application
+### Building and executing a basic node.js application
 
 * install a library 
 * use require to load a module 
@@ -28,12 +28,20 @@ Introduction to the training, the topic, the method and collection of participan
 * execute the app 
 * let the app write to std.io 
 
-## Networking and async stuff
+### Networking and async stuff
 
 * Open port 80 
 * Wait for a request to come in 
 * log the ip of the request
 * write  async function
+* request and response object 
+
+### Streams
+
+* open a file as a stream
+* explain streams 
+* pipe streams
+
 
 ## Part II 
 
