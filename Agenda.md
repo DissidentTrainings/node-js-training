@@ -130,3 +130,10 @@ Building a simple web app
 ### 02.11 Express.js Coding Dojo 
 
 ### 02.12 Lessons learned, QA and resolutions
+
+
+
+# Additions 
+
+* http://justbuildsomething.com/node-js-best-practices/
+* 
