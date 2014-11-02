@@ -158,3 +158,10 @@ Connect provides easy to use and pre-defined modules to mess wit requests. Authe
 ### 02.11 Express.js Coding Dojo 
 
 ### 02.12 Lessons learned, QA and resolutions
+
+
+
+# Additions 
+
+* http://justbuildsomething.com/node-js-best-practices/
+* 
