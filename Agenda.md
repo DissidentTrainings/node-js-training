@@ -22,8 +22,13 @@ An introduction to all the basic nuts and bolts of how node.js works and what im
 * npm 
 * commonJS and require.js
 
+**Explain libev, libio**
 
-Show basic NPM options
+* History
+* Where does the event in node come from. 
+* http://stackoverflow.com/questions/10680601/nodejs-event-loop
+
+**Show basic NPM options**
 
 ```
 ➜  node-js-training-examples git:(master) npm help
@@ -56,13 +61,19 @@ Config info can be viewed via: npm help config
 npm@1.4.28 /usr/local/lib/node_modules/npm
 ```
 
-
-Discuss some of the V8 options
-
+**Discuss some of the V8 options**
 
 ```
 node --v8-options
+```
 
+**Walkthrough** a commonJS module.
+
+```
+var a = {
+    'b': true;
+}
+module.exports = a;
 ```
 
 ### v0.1.3 Building and executing a basic node.js code
@@ -73,7 +84,6 @@ Fiddling around with node.js code to setup a little piece of code, execute it an
 * use require to load a module 
 * know the order where require looks for files 
 * execute the app 
-
 
 NPM is a package manager, built around the infrastructure of node.js, git and semver
 
@@ -99,15 +109,25 @@ Questions:
 * Where do 'modules' reside? 
 * Why a 
 
+**Package Names**
+
+```
+o   a) a folder containing a program described by a package.json file
+o   b) a gzipped tarball containing (a)
+o   c) a url that resolves to (b)
+o   d) a <name>@<version> that is published on the registry with (c)
+o   e) a <name>@<tag> that points to (d)
+o   f) a <name> that has a "latest" tag satisfying (e)
+o   g) a git url that, when cloned, results in (a).
+```
+
+**Install a module**
 
 ````
 var jade = require('jade');
 
 ```
-
 Search order of require()
-
-
 
 
 ### 01.04 Networking and async stuff
