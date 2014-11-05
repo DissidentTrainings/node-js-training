@@ -8,11 +8,11 @@ Introduces to node.js, npm and packages
 
 ## Part I 
 
-### 01.01. Introduction and collection of objectives
+### v0.1.1 Introduction and collection of objectives
 
-Introduction to the training, the topic, the method and collection of participants objectives.  
+    Introduction to the training, the topic, the method and collection of participants objectives.  
 
-### 01.02. How node works & why javascript 
+### v0.1.2 How node works & why javascript 
 
 An introduction to all the basic nuts and bolts of how node.js works and what implications this has.
 
@@ -20,9 +20,52 @@ An introduction to all the basic nuts and bolts of how node.js works and what im
 * libev
 * libeio
 * npm 
-* require.js 
+* commonJS and require.js
 
-### 01.03 Building and executing a basic node.js code
+
+Show basic NPM options
+
+```
+➜  node-js-training-examples git:(master) npm help
+
+Usage: npm <command>
+
+where <command> is one of:
+    add-user, adduser, apihelp, author, bin, bugs, c, cache,
+    completion, config, ddp, dedupe, deprecate, docs, edit,
+    explore, faq, find, find-dupes, get, help, help-search,
+    home, i, info, init, install, isntall, issues, la, link,
+    list, ll, ln, login, ls, outdated, owner, pack, prefix,
+    prune, publish, r, rb, rebuild, remove, repo, restart, rm,
+    root, run-script, s, se, search, set, show, shrinkwrap,
+    star, stars, start, stop, submodule, t, tag, test, tst, un,
+    uninstall, unlink, unpublish, unstar, up, update, v,
+    version, view, whoami
+
+npm <cmd> -h     quick help on <cmd>
+npm -l           display full usage info
+npm faq          commonly asked questions
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/sebs/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@1.4.28 /usr/local/lib/node_modules/npm
+```
+
+
+Discuss some of the V8 options
+
+
+```
+node --v8-options
+
+```
+
+### v0.1.3 Building and executing a basic node.js code
 
 Fiddling around with node.js code to setup a little piece of code, execute it and grasp the basic handling.
 
@@ -30,7 +73,42 @@ Fiddling around with node.js code to setup a little piece of code, execute it an
 * use require to load a module 
 * know the order where require looks for files 
 * execute the app 
-* let the app write to std.io 
+
+
+NPM is a package manager, built around the infrastructure of node.js, git and semver
+
+Install a module. In our examople we will use the temaplating enginge 'jade'.
+
+```
+npm install jade
+````
+
+Vou might want to add this your package.json
+
+```
+npm install jade --save
+````
+
+* dependencies
+* developmentDependencies
+* peerDependencies
+
+
+Questions: 
+
+* Where do 'modules' reside? 
+* Why a 
+
+
+````
+var jade = require('jade');
+
+```
+
+Search order of require()
+
+
+
 
 ### 01.04 Networking and async stuff
 
@@ -51,7 +129,7 @@ Use redis to demonstrate how to interact with external data storages. While we a
 * a crud application 
 * memory vs. HDD vs. Network Speed 
 * Using a external library for redis
-
+ 
 ### 01.06 Recap, lessons learned and QA
 
 Collecting all the important learning points, cluster them and talk them through.
